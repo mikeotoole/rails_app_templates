@@ -1,0 +1,33 @@
+AllCops:
+  Include:
+    - config.ru
+  Exclude:
+    - db/schema.rb
+    - db/migrate/*
+    - config/**/*
+    - bin/*
+    - script/*
+    - spec/rails_helper.rb
+    - spec/spec_helper.rb
+AbcSize:
+  Enabled: false
+  Max: 20
+LineLength:
+  Enabled: true
+  Max: 100
+Style/CollectionMethods:
+  # Mapping from undesired method to desired_method
+  # e.g. to use `detect` over `find`:
+  PreferredMethods:
+    collect: 'map'
+    collect!: 'map!'
+    inject: 'reduce'
+    detect: 'detect'
+    find: 'detect'
+    find_all: 'select'
+Style/Documentation:
+  Enabled: false
+Style/GuardClause:
+  Enabled: false
+Style/Next:
+  Enabled: false

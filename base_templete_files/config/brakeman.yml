@@ -1,0 +1,5 @@
+---
+:quiet: true
+:exit_on_warn: true
+:skip_checks:
+- CheckSessionSettings
